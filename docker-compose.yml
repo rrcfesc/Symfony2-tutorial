@@ -1,7 +1,7 @@
 version: '2'
 services:
   web:
-    image: apachephp:5.6
+    image: apachephp:7.1
     networks:
       symf_net:
         ipv4_address: 172.18.20.09
