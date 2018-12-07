@@ -1,3 +1,16 @@
+app_logout:
+  path: /logout
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
+app_lucky_number:
+  path: /lucky/number
+  controller: App\Controller\LuckyController::number
+
+blog_list:
+  path:     /blog
+  controller: App\Controller\BlogController::list
+
+blog_show:
+  path:     /blog/{slug}
+  controller: App\Controller\BlogController::show
