@@ -26,3 +26,11 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
+
+    # for symfony 3 the class name would likely be AppBundle\Worker\FibonacciWorker
+    App\Worker\FibonacciWorker:
+        # public: false is possible if you completely use DependencyInjection for access to the service
+        public: true
+        tags:
+            - { name: "dtc_queue.worker" }
+

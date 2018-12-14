@@ -1,5 +1,10 @@
 app_logout:
   path: /logout
+
+dtc_queue:
+  resource: '@DtcQueueBundle/Resources/config/routing.yml'
+dtc_grid:
+  resource: '@DtcGridBundle/Resources/config/routing.yml'
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
